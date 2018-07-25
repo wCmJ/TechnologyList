@@ -58,3 +58,27 @@
             
     </Product>
 </Wix>
+
+
+
+content writed to HKCR also will be written to HKCU\SOFTWARE\Classes\
+
+perUser     <==>    limited
+perMachine  <==>    elevated
+
+perUser with elevated
+perMachine with limited
+thest two will get error. specify error message by below
+<Condition Message="error message">
+    Privileged
+</Condition>
+
+
+
+
+
+
+
+
+
+
